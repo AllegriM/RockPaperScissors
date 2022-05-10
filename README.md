@@ -10,7 +10,7 @@ Thanks for checking out this front-end coding game.
 
 ## Here you can see the online page!
 
-Online version: 
+Online version: https://allegrim.github.io/RockPaperScissors/
 
 
 
