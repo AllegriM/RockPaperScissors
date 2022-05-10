@@ -12,11 +12,6 @@ let scoreNum = document.querySelector('.num-score')
 
 let score = 0;
 
-const handOptions = {
-    "rock": "/assets/Rock.png",
-    "paper": "/assets/Paper.png",
-    "scissors": "/assets/Scissors.png"
-}
 // Event Listeners
 
 for (let i = 0; i < gameBtns.length; i++) {   
@@ -82,15 +77,15 @@ function resetButton() {
 
 function contestWinner(humanPick, compPick) {
     if (humanPick == "scissors" && compPick == "paper") {
-        titleMatch('You win');
+        titleMatch('You win!');
         addPoint();
     }if (humanPick == "scissors" && compPick == "rock"){
         titleMatch('You lose!');
         score = 0;
     }if (humanPick == "scissors" && compPick == "scissors"){
-        titleMatch('Tie');
+        titleMatch("Tie");
     }if (humanPick == "rock" && compPick == "scissors") {
-        titleMatch('You win');
+        titleMatch('You win!');
         addPoint();
     }
     if (humanPick == "rock" && compPick == "paper") {
@@ -98,7 +93,7 @@ function contestWinner(humanPick, compPick) {
         score = 0;
     }
     if (humanPick == "rock" && compPick == "rock") {
-        titleMatch('Tie');
+        titleMatch("Tie");
     }
     if (humanPick == "paper" && compPick == "scissors") {
         titleMatch('You lose!');
@@ -109,7 +104,7 @@ function contestWinner(humanPick, compPick) {
         addPoint();
     }
     if (humanPick == "paper" && compPick == "paper") {
-        titleMatch('Tie');
+        titleMatch("Tie");
     }
 }
 
